@@ -1,0 +1,93 @@
+todas las versiones de javascript son compatibles estrictamente (super set estricto)
+transpilacion es complicacion pero de codigo fuente a codigo fuente
+
+typescript es un superset estricto 
+
+flow type seria un tipo linter para tipos para usar con react
+
+JIT Compilation - javascript se complila en el navegador
+
+webassembly es un subset de javascript
+
+
+es2015
+
+let y const, usar siempre const
+los tipos de datos avanzados se pueden cambiar aunque sea un const
+
+es2016 y es2017 agregar Syntax Sugar, mas lindo sin cambiar el fondo
+
+no hay sobrecarga de ningun tipo en es2015
+
+con arrow function el this es el this de afuera no del objeto propio
+
+'' "" para string y ahora hay `` que se puede usar para hacer multi lineas y usar cambios de variables ${a}
+
+
+<script defer src=""> no para la descarga de las demas cosas, cuando termine todo ejecuta el js 
+<script async src=""> no para la descarga pero cuando terina la descarga lo ejecuta y suspende momentaneamente la demas descarga y luego de ejecutar retoma la descarga
+
+react jsx es como e4x que habia antes para usar xml en javascript
+
+
+universo react
+
+ReactJS, trabaja sobre el DOM
+ReactNative 
+ReactVR de aqui sale webGL
+Flow Type, que premite los tipos de datos
+ReactRouter, manejar historial de navagacion y rutas
+Redux, manejo de estados
+Flux
+
+con reactjs se puede:
+crear widgets/Apps pequeñas par aun sitio existente
+Sitio Web completo - Single Page Apps - Paginas
+Hibrido / Nativa Web
+Progessive Web Apps
+
+
+metricas importantes :
+
+first meaningful paint
+first time interactive
+
+react es client side rendered
+
+universal/isomorphic rendered, renderizamos en el server y seguimos haciendo cosas en el cliente despues
+
+
+webcomponents, al ser nativo es mas eficiente
+
+todos los eventos del DOM estan en react pero con notacion camello onClick en vez de onclick
+
+componente puro, es el que no depende de propiedades ni el state para renderizar y todos sus hijos deben ser puros tb
+
+
+for(let i of collection) en ecma script 6
+
+siempre para cambiar el state si es un objeto o un array hay que clonar el elemento para que detecte que es diferente
+
+statefull component es un class
+stateless component una arrow function
+
+para las PWA en Ios
+meta=apple-mobile-web-app-capable = yes
+
+
+service worker, is es un web worker
+es un hilo de ejecucion, con un scope (carpeta/URL)
+un web worker es un thread de javascript, no hay acceso a UI o DOM
+habilidad de ver todos los recursos del scope que se estan "usando", puede responder por esos recuersos, creandolos o buscandolos
+
+captura los request y puede servirlos desde un cache
+
+redux, framework de estados, con patron de diseño similar a flux, 
+app simple de hidratar, simple de testear en condiciones complejas, simple de historializar
+todo el estado se almacena en on object tree en un store
+el estado es readolny, se cambian emitiendo una accion con action creator
+los cambios se hace con funciones puras (reducers), no mutan objetos, no llaman a APIs, no llaman funciones impuras
+
+se encierra en Provider la App
+se hacen componentes smart y dumb
+los smart se conectan con el estado y manejan los cambios via acciones
